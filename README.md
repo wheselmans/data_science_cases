@@ -4,7 +4,7 @@ Fictitious data science cases (educational perspective)
 In this repository, you can add interesting data science cases found on the internet and adjusted to your own needs.
 Make sure you add a README.md file with description of the case, source of the case,..
 
-Structure:
+Structure:\
 notebooks/ \
 ├── case_x/ \
 │ ├── data/ \
