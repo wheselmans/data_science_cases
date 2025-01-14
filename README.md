@@ -27,3 +27,8 @@ Create a virtual environment and install the requirements.txt file so all necess
 python -m venv myenv
 Activate the venv called 'myenv': myenv\Scripts\activate
 pip install -r requirements.txt
+
+### To use kaggle
+
+Make sure you have the .kaggle/kaggle.json file with your API credentials in your main working directory.
+You can download the kaggle.json file from your kaggle account on the website.
