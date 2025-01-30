@@ -1,7 +1,6 @@
 # Heart Attack Risk Predicion
 
 Created by Geert Vandezande, 20250130
-Part of Data Scientist course Syntra Leuven 2024-2025
 
 
 
