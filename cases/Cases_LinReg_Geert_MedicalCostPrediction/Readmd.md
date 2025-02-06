@@ -1,14 +1,14 @@
-# Heart Attack Risk Predicion
+# Insurance medical cost prediction
 
-Created by Geert Vandezande, 20250130
+Created by Geert Vandezande, 202502
 
 
 
 Structure:\
 cases/ \
-├── HeartAttackRiskPrediction/ \
+├── Cases_LinReg_Geert_MedicalCostPrediction \
 │ ├── data/ \
-│ │ ├──  heart_attack_risk_dataset \
+│ │ ├──  insurance.csv \
 │ ├── HARP_EDA.ipynb \
 │ ├── HARP_Modelling.ipynb \
 │ ├── README.md \
