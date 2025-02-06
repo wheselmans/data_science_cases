@@ -29,6 +29,7 @@ click==8.1.7
 cloudpickle==3.1.1
 colorama==0.4.6
 colorcet==3.1.0
+colorlog==6.9.0
 comm==0.2.2
 contourpy==1.3.1
 cookiecutter==2.6.0
@@ -107,6 +108,7 @@ kaggle==1.6.17
 kagglehub==0.3.4
 kaleido==0.2.1
 kiwisolver==1.4.7
+lightgbm==4.5.0
 linkify-it-py==2.0.3
 lxml==5.3.0
 lz4==4.3.3
@@ -138,6 +140,7 @@ openpyxl==3.1.5
 opentelemetry-api==1.29.0
 opentelemetry-sdk==1.29.0
 opentelemetry-semantic-conventions==0.50b0
+optuna==4.2.0
 overrides==7.7.0
 packaging==24.1
 pandas==2.2.3
