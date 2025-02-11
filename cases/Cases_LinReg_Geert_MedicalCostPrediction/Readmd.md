@@ -9,7 +9,6 @@ cases/ \
 │ ├── data/ \
 │ │ ├──  insurance.csv \
 │ ├── CaseLinReg_MedicalCostPrediction.ipynb
-│ ├── HARP_Modelling.ipynb \
 │ ├── README.md \
 
 
