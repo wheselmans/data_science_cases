@@ -3,13 +3,12 @@
 Created by Geert Vandezande, 20250130
 
 
-
 Structure:\
 cases/ \
 ├── HeartAttackRiskPrediction/ \
 │ ├── data/ \
 │ │ ├──  heart_attack_risk_dataset \
-│ ├── HARP_EDA.ipynb \
+│ ├── CaseLogReg_HeartAttackRickPrediction.ipynb
 │ ├── HARP_Modelling.ipynb \
 │ ├── README.md \
 
