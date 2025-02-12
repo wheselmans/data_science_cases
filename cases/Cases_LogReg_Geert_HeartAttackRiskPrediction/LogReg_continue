@@ -18,49 +18,7 @@ Describe van de dataset
 | Exercise_Induced_Angina |   50000 |   0.20164 |  0.401229 |     0 |   0    |   0    |   0    |     1 |
 | Max_Heart_Rate_Achieved |   50000 | 149.305   | 28.8237   |   100 | 124    | 149    | 174    |   199 |
 +-------------------------+---------+-----------+-----------+-------+--------+--------+--------+-------+
-Check op nulwaarden: 
-Age                        0
-Gender                     0
-Smoking                    0
-Alcohol_Consumption        0
-Physical_Activity_Level    0
-BMI                        0
-Diabetes                   0
-Hypertension               0
-Cholesterol_Level          0
-Resting_BP                 0
-Heart_Rate                 0
-Family_History             0
-Stress_Level               0
-Chest_Pain_Type            0
-Thalassemia                0
-Fasting_Blood_Sugar        0
-ECG_Results                0
-Exercise_Induced_Angina    0
-Max_Heart_Rate_Achieved    0
-Heart_Attack_Risk          0
-dtype: int64
-Check op duplicates: 
-0
 
-Describe van de dataset
-+-------------------------+---------+-----------+-----------+-------+--------+--------+--------+-------+
-|                         |   count |      mean |       std |   min |    25% |    50% |    75% |   max |
-|-------------------------+---------+-----------+-----------+-------+--------+--------+--------+-------|
-| Age                     |   50000 |  53.3987  | 20.799    |    18 |  35    |  53    |  71    |    89 |
-| Smoking                 |   50000 |   0.29842 |  0.457569 |     0 |   0    |   0    |   1    |     1 |
-| Alcohol_Consumption     |   50000 |   0.40198 |  0.490303 |     0 |   0    |   0    |   1    |     1 |
-| BMI                     |   50000 |  27.5194  |  7.22518  |    15 |  21.27 |  27.54 |  33.77 |    40 |
-| Diabetes                |   50000 |   0.19884 |  0.399131 |     0 |   0    |   0    |   0    |     1 |
-| Hypertension            |   50000 |   0.29738 |  0.45711  |     0 |   0    |   0    |   1    |     1 |
-| Cholesterol_Level       |   50000 | 225.036   | 43.3174   |   150 | 187.3  | 225.1  | 262.6  |   300 |
-| Resting_BP              |   50000 | 134.434   | 25.908    |    90 | 112    | 134    | 157    |   179 |
-| Heart_Rate              |   50000 |  94.5305  | 20.1871   |    60 |  77    |  94    | 112    |   129 |
-| Family_History          |   50000 |   0.30034 |  0.45841  |     0 |   0    |   0    |   1    |     1 |
-| Fasting_Blood_Sugar     |   50000 |   0.14936 |  0.356447 |     0 |   0    |   0    |   0    |     1 |
-| Exercise_Induced_Angina |   50000 |   0.20164 |  0.401229 |     0 |   0    |   0    |   0    |     1 |
-| Max_Heart_Rate_Achieved |   50000 | 149.305   | 28.8237   |   100 | 124    | 149    | 174    |   199 |
-+-------------------------+---------+-----------+-----------+-------+--------+--------+--------+-------+
 Check op nulwaarden: 
 Age                        0
 Gender                     0
@@ -83,6 +41,6 @@ Exercise_Induced_Angina    0
 Max_Heart_Rate_Achieved    0
 Heart_Attack_Risk          0
 dtype: int64
+
 Check op duplicates: 
 0
-File ingelezen: data/heart_attack_risk_dataset.csv
