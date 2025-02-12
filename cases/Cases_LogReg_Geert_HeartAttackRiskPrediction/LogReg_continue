@@ -46,3 +46,37 @@ Check op duplicates:
 0
 Voorkomens in y_pred: Counter({'Low': 10000})
 Voorkomens in y_test: Counter({'Low': 5083, 'Moderate': 2930, 'High': 1987})
+
+accuracy_score: 50.83
+classification_report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.51      0.67     10000
+    Moderate       0.00      0.00      0.00         0
+
+    accuracy                           0.51     10000
+   macro avg       0.33      0.17      0.22     10000
+weighted avg       1.00      0.51      0.67     10000
+
+Confusion matrix: <function confusion_matrix at 0x0000027EF8FDDD00>
+Voorkomens in y_pred: Counter({'Low': 10000})
+Voorkomens in y_test: Counter({'Low': 5083, 'Moderate': 2930, 'High': 1987})
+
+accuracy_score: 50.83
+classification_report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.51      0.67     10000
+    Moderate       0.00      0.00      0.00         0
+
+    accuracy                           0.51     10000
+   macro avg       0.33      0.17      0.22     10000
+weighted avg       1.00      0.51      0.67     10000
+
+Confusion matrix: +------+------+------+
+|    0 |    1 |    2 |
+|------+------+------|
+|    0 |    0 |    0 |
+| 1987 | 5083 | 2930 |
+|    0 |    0 |    0 |
++------+------+------+
