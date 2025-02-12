@@ -44,3 +44,5 @@ dtype: int64
 
 Check op duplicates: 
 0
+Voorkomens in y_pred: Counter({'Low': 10000})
+Voorkomens in y_test: Counter({'Low': 5083, 'Moderate': 2930, 'High': 1987})
