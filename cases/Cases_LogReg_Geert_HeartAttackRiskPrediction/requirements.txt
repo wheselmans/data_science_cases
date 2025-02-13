@@ -99,7 +99,7 @@ itsdangerous==2.2.0
 jedi==0.19.1
 Jinja2==3.1.4
 jmespath==1.0.1
-joblib==1.1.1
+joblib>=1.2.0
 json5==0.9.25
 jsonpointer==3.0.0
 jsonschema==4.23.0
@@ -159,7 +159,6 @@ overrides==7.7.0
 packaging==24.1
 pandas==2.2.3
 pandas-dq==1.29
-pandas-profiling==3.2.0
 pandasgui==0.2.14
 pandocfilters==1.5.1
 panel==1.5.4
