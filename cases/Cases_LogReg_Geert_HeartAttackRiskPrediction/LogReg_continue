@@ -65,3 +65,88 @@ Confusion matrix: +------+------+------+
 | 1987 | 5083 | 2930 |
 |    0 |    0 |    0 |
 +------+------+------+
+
+
+Model : Random Forest
+Confusion matrix: [[  95  252  128]
+ [1615 4056 2364]
+ [ 277  775  438]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.05      0.20      0.08       475
+         Low       0.80      0.50      0.62      8035
+    Moderate       0.15      0.29      0.20      1490
+
+    accuracy                           0.46     10000
+   macro avg       0.33      0.33      0.30     10000
+weighted avg       0.67      0.46      0.53     10000
+
+Accuracy scores: 0.4589
+
+
+Model : Ada Boost
+Confusion matrix: [[ 558 1439  850]
+ [1017 2594 1474]
+ [ 412 1050  606]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.28      0.20      0.23      2847
+         Low       0.51      0.51      0.51      5085
+    Moderate       0.21      0.29      0.24      2068
+
+    accuracy                           0.38     10000
+   macro avg       0.33      0.33      0.33     10000
+weighted avg       0.38      0.38      0.38     10000
+
+Accuracy scores: 0.3758
+
+
+Model : Gradient Boosting
+Confusion matrix: [[   3    4    1]
+ [1945 4973 2857]
+ [  39  106   72]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.00      0.38      0.00         8
+         Low       0.98      0.51      0.67      9775
+    Moderate       0.02      0.33      0.05       217
+
+    accuracy                           0.50     10000
+   macro avg       0.33      0.41      0.24     10000
+weighted avg       0.96      0.50      0.66     10000
+
+Accuracy scores: 0.5048
+
+
+Model : Extra Trees
+Confusion matrix: [[  76  265  151]
+ [1621 4073 2343]
+ [ 290  745  436]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.04      0.15      0.06       492
+         Low       0.80      0.51      0.62      8037
+    Moderate       0.15      0.30      0.20      1471
+
+    accuracy                           0.46     10000
+   macro avg       0.33      0.32      0.29     10000
+weighted avg       0.67      0.46      0.53     10000
+
+Accuracy scores: 0.4585
+
+
+Model : Logistic Regression
+Confusion matrix: [[ 775 1987 1143]
+ [ 602 1530  902]
+ [ 610 1566  885]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.39      0.20      0.26      3905
+         Low       0.30      0.50      0.38      3034
+    Moderate       0.30      0.29      0.30      3061
+
+    accuracy                           0.32     10000
+   macro avg       0.33      0.33      0.31     10000
+weighted avg       0.34      0.32      0.31     10000
+
+Accuracy scores: 0.319

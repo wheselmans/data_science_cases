@@ -69,7 +69,6 @@ fqdn==1.5.1
 frozenlist==1.5.0
 fsspec==2024.10.0
 future==1.0.0
-fuzzywuzzy==0.18.0
 gitdb==4.0.12
 GitPython==3.1.44
 google-auth==2.38.0
@@ -162,7 +161,6 @@ overrides==7.7.0
 packaging==24.1
 pandas==2.2.3
 pandas-dq==1.29
-pandas-profiling==3.2.0
 pandasgui==0.2.14
 pandocfilters==1.5.1
 panel==1.5.4
@@ -231,7 +229,7 @@ Scrapy==2.12.0
 seaborn==0.13.2
 Send2Trash==1.8.3
 service-identity==24.2.0
-setuptools==75.1.0
+setuptools==75.8.0
 shub==2.15.4
 six==1.16.0
 sklearn-compat==0.1.3
