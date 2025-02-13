@@ -58,12 +58,88 @@ classification_report:               precision    recall  f1-score   support
    macro avg       0.33      0.17      0.22     10000
 weighted avg       1.00      0.51      0.67     10000
 
-Confusion matrix: <function confusion_matrix at 0x0000027EF8FDDD00>
-Voorkomens in y_pred: Counter({'Low': 10000})
-Voorkomens in y_test: Counter({'Low': 5083, 'Moderate': 2930, 'High': 1987})
+Confusion matrix: +------+------+------+
+|    0 |    1 |    2 |
+|------+------+------|
+|    0 |    0 |    0 |
+| 1987 | 5083 | 2930 |
+|    0 |    0 |    0 |
++------+------+------+
 
-accuracy_score: 50.83
-classification_report:               precision    recall  f1-score   support
+
+Model : Random Forest
+Confusion matrix: [[   7   24   10]
+ [1887 4821 2763]
+ [  93  238  157]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.00      0.17      0.01        41
+         Low       0.95      0.51      0.66      9471
+    Moderate       0.05      0.32      0.09       488
+
+    accuracy                           0.50     10000
+   macro avg       0.34      0.33      0.25     10000
+weighted avg       0.90      0.50      0.63     10000
+
+Accuracy scores: 0.4985
+
+
+Model : Ada Boost
+Confusion matrix: [[   0    0    0]
+ [1987 5082 2928]
+ [   0    1    2]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.51      0.67      9997
+    Moderate       0.00      0.67      0.00         3
+
+    accuracy                           0.51     10000
+   macro avg       0.33      0.39      0.23     10000
+weighted avg       1.00      0.51      0.67     10000
+
+Accuracy scores: 0.5084
+
+
+Model : Gradient Boosting
+Confusion matrix: [[   0    3    0]
+ [1981 5072 2917]
+ [   6    8   13]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         3
+         Low       1.00      0.51      0.67      9970
+    Moderate       0.00      0.48      0.01        27
+
+    accuracy                           0.51     10000
+   macro avg       0.33      0.33      0.23     10000
+weighted avg       0.99      0.51      0.67     10000
+
+Accuracy scores: 0.5085
+
+
+Model : Extra Trees
+Confusion matrix: [[  35  106   66]
+ [1720 4440 2584]
+ [ 232  537  280]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.02      0.17      0.03       207
+         Low       0.87      0.51      0.64      8744
+    Moderate       0.10      0.27      0.14      1049
+
+    accuracy                           0.48     10000
+   macro avg       0.33      0.31      0.27     10000
+weighted avg       0.77      0.48      0.58     10000
+
+Accuracy scores: 0.4755
+
+
+Model : Logistic Regression
+Confusion matrix: [[   0    0    0]
+ [1987 5083 2930]
+ [   0    0    0]]
+Classification report:               precision    recall  f1-score   support
 
         High       0.00      0.00      0.00         0
          Low       1.00      0.51      0.67     10000
@@ -73,10 +149,21 @@ classification_report:               precision    recall  f1-score   support
    macro avg       0.33      0.17      0.22     10000
 weighted avg       1.00      0.51      0.67     10000
 
-Confusion matrix: +------+------+------+
-|    0 |    1 |    2 |
-|------+------+------|
-|    0 |    0 |    0 |
-| 1987 | 5083 | 2930 |
-|    0 |    0 |    0 |
-+------+------+------+
+Accuracy scores: 0.5083
+
+
+Model : Support Vector Machine
+Confusion matrix: [[   0    0    0]
+ [1987 5083 2930]
+ [   0    0    0]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.51      0.67     10000
+    Moderate       0.00      0.00      0.00         0
+
+    accuracy                           0.51     10000
+   macro avg       0.33      0.17      0.22     10000
+weighted avg       1.00      0.51      0.67     10000
+
+Accuracy scores: 0.5083
