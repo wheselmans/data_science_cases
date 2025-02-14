@@ -167,3 +167,233 @@ Classification report:               precision    recall  f1-score   support
 weighted avg       0.48      0.42      0.44     10000
 
 Accuracy scores: 0.4204
+Voorkomens in y_pred: Counter({'Low': 10000})
+Voorkomens in y_test: Counter({'Low': 5083, 'Moderate': 2930, 'High': 1987})
+
+accuracy_score: 50.83
+classification_report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.51      0.67     10000
+    Moderate       0.00      0.00      0.00         0
+
+    accuracy                           0.51     10000
+   macro avg       0.33      0.17      0.22     10000
+weighted avg       1.00      0.51      0.67     10000
+
+Confusion matrix: +------+------+------+
+|    0 |    1 |    2 |
+|------+------+------|
+|    0 |    0 |    0 |
+| 1987 | 5083 | 2930 |
+|    0 |    0 |    0 |
++------+------+------+
+Voorkomens in y_pred: Counter({'Low': 10000})
+Voorkomens in y_test: Counter({'Low': 5005, 'Moderate': 2981, 'High': 2014})
+
+accuracy_score: 50.05
+classification_report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.50      0.67     10000
+    Moderate       0.00      0.00      0.00         0
+
+    accuracy                           0.50     10000
+   macro avg       0.33      0.17      0.22     10000
+weighted avg       1.00      0.50      0.67     10000
+
+Confusion matrix: +------+------+------+
+|    0 |    1 |    2 |
+|------+------+------|
+|    0 |    0 |    0 |
+| 2014 | 5005 | 2981 |
+|    0 |    0 |    0 |
++------+------+------+
+Voorkomens in y_pred: Counter({'Low': 10000})
+Voorkomens in y_test: Counter({'Low': 5005, 'Moderate': 2981, 'High': 2014})
+
+accuracy_score: 50.05
+classification_report:               precision    recall  f1-score   support
+
+        High       0.00      0.00      0.00         0
+         Low       1.00      0.50      0.67     10000
+    Moderate       0.00      0.00      0.00         0
+
+    accuracy                           0.50     10000
+   macro avg       0.33      0.17      0.22     10000
+weighted avg       1.00      0.50      0.67     10000
+
+Confusion matrix: +------+------+------+
+|    0 |    1 |    2 |
+|------+------+------|
+|    0 |    0 |    0 |
+| 2014 | 5005 | 2981 |
+|    0 |    0 |    0 |
++------+------+------+
+Voorkomens in y_pred: Counter({'High': 3596, 'Low': 3377, 'Moderate': 3027})
+Voorkomens in y_test: Counter({'Low': 5005, 'Moderate': 2981, 'High': 2014})
+
+accuracy_score: 33.739999999999995
+classification_report:               precision    recall  f1-score   support
+
+        High       0.37      0.21      0.26      3596
+         Low       0.34      0.50      0.41      3377
+    Moderate       0.31      0.31      0.31      3027
+
+    accuracy                           0.34     10000
+   macro avg       0.34      0.34      0.33     10000
+weighted avg       0.34      0.34      0.33     10000
+
+Confusion matrix: +-----+------+------+
+|   0 |    1 |    2 |
+|-----+------+------|
+| 742 | 1795 | 1059 |
+| 679 | 1704 |  994 |
+| 593 | 1506 |  928 |
++-----+------+------+
+Voorkomens in y_pred: Counter({'Low': 8100, 'Moderate': 1444, 'High': 456})
+Voorkomens in y_test: Counter({'Low': 5005, 'Moderate': 2981, 'High': 2014})
+
+accuracy_score: 45.81
+classification_report:               precision    recall  f1-score   support
+
+        High       0.05      0.23      0.09       456
+         Low       0.81      0.50      0.62      8100
+    Moderate       0.14      0.29      0.19      1444
+
+    accuracy                           0.46     10000
+   macro avg       0.33      0.34      0.30     10000
+weighted avg       0.68      0.46      0.53     10000
+
+Confusion matrix: +------+------+------+
+|    0 |    1 |    2 |
+|------+------+------|
+|  105 |  227 |  124 |
+| 1597 | 4061 | 2442 |
+|  312 |  717 |  415 |
++------+------+------+
+Eenvoudige logistic regression met SMOTE en met stratify op de target value
+********************************************************************
+Voorkomens in y_pred: Counter({'High': 3596, 'Low': 3377, 'Moderate': 3027})
+Voorkomens in y_test: Counter({'Low': 5005, 'Moderate': 2981, 'High': 2014})
+
+accuracy_score: 33.739999999999995
+classification_report:               precision    recall  f1-score   support
+
+        High       0.37      0.21      0.26      3596
+         Low       0.34      0.50      0.41      3377
+    Moderate       0.31      0.31      0.31      3027
+
+    accuracy                           0.34     10000
+   macro avg       0.34      0.34      0.33     10000
+weighted avg       0.34      0.34      0.33     10000
+
+Confusion matrix: +-----+------+------+
+|   0 |    1 |    2 |
+|-----+------+------|
+| 742 | 1795 | 1059 |
+| 679 | 1704 |  994 |
+| 593 | 1506 |  928 |
++-----+------+------+
+
+
+Model : Random Forest
+Confusion matrix: [[  99  221  128]
+ [1631 4073 2428]
+ [ 284  711  425]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.05      0.22      0.08       448
+         Low       0.81      0.50      0.62      8132
+    Moderate       0.14      0.30      0.19      1420
+
+    accuracy                           0.46     10000
+   macro avg       0.34      0.34      0.30     10000
+weighted avg       0.68      0.46      0.54     10000
+
+Accuracy scores: 0.4597
+
+
+Model : Ada Boost
+Confusion matrix: [[ 227  511  289]
+ [ 940 2369 1458]
+ [ 847 2125 1234]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.11      0.22      0.15      1027
+         Low       0.47      0.50      0.48      4767
+    Moderate       0.41      0.29      0.34      4206
+
+    accuracy                           0.38     10000
+   macro avg       0.33      0.34      0.33     10000
+weighted avg       0.41      0.38      0.39     10000
+
+Accuracy scores: 0.383
+
+
+Model : Gradient Boosting
+Confusion matrix: [[   1    3    2]
+ [1985 4904 2932]
+ [  28   98   47]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.00      0.17      0.00         6
+         Low       0.98      0.50      0.66      9821
+    Moderate       0.02      0.27      0.03       173
+
+    accuracy                           0.50     10000
+   macro avg       0.33      0.31      0.23     10000
+weighted avg       0.96      0.50      0.65     10000
+
+Accuracy scores: 0.4952
+
+
+Model : Extra Trees
+Confusion matrix: [[ 103  255  141]
+ [1631 4026 2430]
+ [ 280  724  410]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.05      0.21      0.08       499
+         Low       0.80      0.50      0.62      8087
+    Moderate       0.14      0.29      0.19      1414
+
+    accuracy                           0.45     10000
+   macro avg       0.33      0.33      0.29     10000
+weighted avg       0.67      0.45      0.53     10000
+
+Accuracy scores: 0.4539
+
+
+Model : Logistic Regression
+Confusion matrix: [[ 742 1795 1059]
+ [ 679 1704  994]
+ [ 593 1506  928]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.37      0.21      0.26      3596
+         Low       0.34      0.50      0.41      3377
+    Moderate       0.31      0.31      0.31      3027
+
+    accuracy                           0.34     10000
+   macro avg       0.34      0.34      0.33     10000
+weighted avg       0.34      0.34      0.33     10000
+
+Accuracy scores: 0.3374
+
+
+Model : Support Vector Machine
+Confusion matrix: [[ 242  639  366]
+ [1271 3205 1930]
+ [ 501 1161  685]]
+Classification report:               precision    recall  f1-score   support
+
+        High       0.12      0.19      0.15      1247
+         Low       0.64      0.50      0.56      6406
+    Moderate       0.23      0.29      0.26      2347
+
+    accuracy                           0.41     10000
+   macro avg       0.33      0.33      0.32     10000
+weighted avg       0.48      0.41      0.44     10000
+
+Accuracy scores: 0.4132
