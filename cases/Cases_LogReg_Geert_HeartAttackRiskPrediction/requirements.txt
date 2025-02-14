@@ -241,6 +241,7 @@ SQLAlchemy==2.0.37
 sqlparse==0.5.3
 squarify==0.4.4
 stack-data==0.6.3
+stats==0.1.2a0
 statsmodels==0.14.4
 strsimpy==0.2.1
 summarytools==0.3.0
