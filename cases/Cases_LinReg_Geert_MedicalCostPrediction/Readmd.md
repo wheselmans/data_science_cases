@@ -27,5 +27,20 @@ pip install -f requirements.txt
 
 Zie voor meer info in de eerste sectie van de notebook
 
+Zie LinReg_continue.log voor info van de diverse testen
+
+Zie alle_results.txt voor de resultaten van de diverse testen
+
+Zie images\*. voor diverse plots van de variabelen
+
+
+Conclusie:
+
+Stratify op de charges levert betere resultaten op
+Hyper parameter tuning levert nog lichte verbetering op
+
+Maar vooral de opdeling van de dataset in rokers en niet-rokers resulteert is een veel beter model voor de rokers. Voor de niet-rokers is er geen verbetering. Hier kan nog verder onderzoek naar verricht worden
+
+
 
 
