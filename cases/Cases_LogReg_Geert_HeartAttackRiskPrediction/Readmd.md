@@ -7,27 +7,24 @@ Geert Vandezande
 
 Structure:\
 cases/ \
-├── HeartAttackRiskPrediction/ \
+├── Cases_HeartAttackRiskPrediction/ \
 │ ├── data/ \
 │ │ ├──  heart_attack_risk_dataset \
-│ ├── CaseLogReg_HeartAttackRickPrediction.ipynb│ ├── 
+│ ├── Geert_HeartAttackRiskPrediction.ipynb│ ├── 
 │ ├── README.md \
 │ ├── images/ \
-
+│ ├── logregcontinue.log
 
 
 More info: see kaggle https://www.kaggle.com/datasets/arifmia/heart-attack-risk-dataset
 
-
 pip install -f requirements.txt
-
-
 
 Doel:
 - Supervised Learning toepassen
 - EDA uitvoeren op een dataset
 - Logistic Regression toepassen op de data voor classificatie
-- andere vormen van classificatie toepassen
+- andere vormen van classificatie toepassen zonder en met hyper parameter tuning
 
 Dataset: 
 - More info: see kaggle https://www.kaggle.com/datasets/arifmia/heart-attack-risk-dataset
@@ -43,10 +40,17 @@ Volgorde van activiteiten in deze notebook: (cfr Datacamp "preparing data for mo
 - feature engineering
 - select features for modelling
 - eenvoudige logistic regression
-- eenvoudige logistic regression en unbalance van de features corrigeren met SMOTE- 
-- modeling met Logistic Regression, Decision Tree Regression en Random Forrest Regression
-- modeling met Hyperparameter tuning met GridSearchCV voor model Random Forrest en DecisionTreeClassifier
+- eenvoudige logistic regression en unbalance van de features corrigeren met SMOTE- en class_weight = 'unbalanced
+- functie voor modeling met Logistic Regression, Decision Tree Regression en Random Forrest Regression, met uitvoering
+- functie modeling met Hyperparameter tuning met GridSearchCV voor drie modellen, met uitvoering
 
 
-Tijdens de uitvoering worden de plots gesaved naar images\ en wordt er een log file aangemaakt logreg_continue.log.
-Deze wordt enkel verwijderd bij een run all. Indien nodig, verwijder deze zelf
+Bij run ALL: (duurt 20 min)
+- output in LogReg_continue.log
+- de plots worden bewaard in de images\
+
+
+Aantal testen werdern uitgevoerd, met en zonder SMOTE, met en zonder HyperParameter tuning maar de resultaten veranderen niet zo veel
+Ook logistic regression met class_weight='balanced' maar op zich weinig verschil in de resultaten
+
+De functies zijn geschreven. We kunnen nadien nog extra testen doen met bepaalde features wel of niet mee te nemen
