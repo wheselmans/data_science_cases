@@ -38,13 +38,14 @@ COEMISSIONS: CO² uitstoot
 # Bevindingen
 De Kaggle bereikt een modelscore van 98,57%.  (model.score(X_test, y_test))
 
-Na het toepassen van de volgende technieken is het resultaat niet verbetert.
+Na het toepassen van de volgende technieken is het resultaat niet verbetert waarschijnlijk omdat de data set te klein was en de Kaggle persoon geen duplicates heeft verwijderd.
 
-LabelEncoder, omzetten van de categorische kolommen naar numerische.
-box-cox transformatie, wegwerken van de skew. score 95,76%
-StandardScaler, standardisaite van de numerieke gegevens. score 95,76%
-Feature engineering, minder features. score 95,42%
-Feature engineering, features samenvoegen. score 95,02%
-Lasso score 94,55% 
-Ridge score 94,55%
-Verwijderen outliers score 97,97%
+LabelEncoder, omzetten van de categorische kolommen naar numerische nadat ik een duplicate heb verwijderd. score 97,56%
+box-cox transformatie, wegwerken van de skewness op de target kolom. score 97,03%
+StandardScaler toepassen op de features. score 97,03% 
+RobustScaler toepassen op de features. score 97,03%
+Feature engineering, features verwijderen. score 96,85%
+Feature engineering, features samenvoegen. score 96,58%
+Lasso score 96,43% 
+Ridge score 96,43%
+Verwijderen outliers score 97,18%
