@@ -1,5 +1,6 @@
 # data_science_cases
 Predicting Temperature in London
+based on: https://www.kaggle.com/code/abdelazizsami/project-predicting-temperature-in-london 
 
 ## Dataset: 
  `london_weather.csv`contains the following columns:
@@ -15,29 +16,32 @@ Predicting Temperature in London
 - **snow_depth** - snow depth measurement in centimeters (cm) - (**float**)
 
 ## Notebooks:
-**0_original_project-predicting-temperature-in-london**
-Author: Abdelaziz Sami
-**1_running_original-predicting-temperature-in-london**
-slightly addapted version: NB (read data from kaggle,recolored/-sized heatmap,replaced debricated features,... )
+While the original notebook is experimenting with regressions, decisiontree & randforest, without taking into account specific time series characteristics (e.g. train test split, etc. ) I wanted to focus on time series.
 **2_TimeSeriesPrediction**
-In this notebook the analysis is more focoused on time series. 
+In this notebook the analysis is more focoused on time series.
 
-**Description(0 & 1):**
-* Load & Inspect Data
-* Process & Clean Data (change dtype of date to datetime, aggregation per month though later no longer used)
-* Data Visualization (lineplot & correlation-heatmap)
-* Feature Selection & Data Preparation
-    * takes all features (dropping only temperature related features as predictors)
-    * Drops missing values in the target variable (mean_temp)
-    * Splits data without taking into account timeseries-characteristics
-    * imputes missing values (mean) and scales the features
-* Train & Evaluate Models (Linear Regression, Decision Tree, and Random Forest)
-    * Iterates over different max_depth values for tree-based models.
-    * Predicts on test data and calculates RMSE (Root Mean Squared Error).
-    * Logs models and performance metrics using MLflow.
+**Preparations**
+* import packages
+* load data
+* set MLFlow
+
+**Exploratory Data Analysis**
+* Explore dataset & data types
+* fix index, missing values
+* Visuals (target feature, decomposition, anual mean fluctuations)
+* ACF/PACF-plots
+* testing stationarity
+
+
+**Train & Evaluate Models** 
+* baseline model
+* Arima 
+* Sarima
+* Lasso (variables not lagged)
+* Predicts on test data and calculates RMSE (Root Mean Squared Error).
+* Logs models and performance metrics using MLflow.
 
 **Main disadvantage of the approach:**
-- The predictions of temperature are done by features at the same time point. 
-- None of the preprocessing steps takes into account time series modeling (train-test-split, prediction by lagged features, blocked cv)
-- There is no controle for overfitting (which definitivly takes place with highdepth forest/tree models)
+- The most interesting models of Arima & Sarima need more fine tuning. 
+- Probably a more complex model including different variables with lags would perform best?
 
