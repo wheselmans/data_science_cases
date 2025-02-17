@@ -35,12 +35,6 @@ Variables:
 
 #### Code:
 
-**0_lung-cancer-analyis.ipynb**
-Original noteboek 
-
-**1_lung-cancer-analysis.ipynb**
-notebook adapted to offline use
-
 **2_Reanalyzing_lung-cancer-analyis.ipynb**
 adapted work
 
