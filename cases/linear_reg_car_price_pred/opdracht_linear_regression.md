@@ -59,7 +59,9 @@ ColumnTransformer
 \* Computing train_score, test_score, mse (these 3 scores also are
 computed in the original notebook, so I can compare them)
 
-\* Computing rmse, r2_score
+\* Computing rmse
+
+\* GridSearch, MLflow
 
 \* Model Perfomance Comparison plot
 
