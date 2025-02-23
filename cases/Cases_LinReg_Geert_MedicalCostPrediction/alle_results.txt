@@ -1,0 +1,125 @@
+Alle resultaten van de testen per type test en per model getest
+*************************************************************
+
+Type uitvoering zit in de naam
+bv NoStrat_NoHyper_Outliers_AllSmokers
+
+Strat of noStrat: wel of geen stratefy
+Hyper of NoHyper: wel of geen hypertuning
+Outlier of noOutliers: met of zonder de outliers op BMI
+Outlier of noOutliers: met of zonder de outliers op BMI
+AllSmoker, noSmokers or smokers: alle personen, enkel niet-rokers en enkel-rokers
+OnlyBMI: enkel BMI als feature gebruikt
+
+
+De beste resultaten van de testen*******************************
+
++-------+------------------------------+------------------------------+------------------------------+
+|       | RMSE                         | R2                           | MAPE                         |
+|-------+------------------------------+------------------------------+------------------------------|
+| value | 3940.6314988546405           | 0.9009365199291076           | 8.71272898207955             |
+| model | Strat_Hyper_Outliers_Smokers | NoStrat_NoHyper_Outliers_All | Strat_Hyper_Outliers_Smokers |
+| type  | Decision Tree                | XGBRegressor                 | Linear Regression            |
++-------+------------------------------+------------------------------+------------------------------+*******************************
+
+
+
+NoStrat_NoHyper_Outliers_All
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  4646.002397  0.882533  30.756591
+1              Lasso  4645.593546  0.882553  30.752313
+2              Ridge  4645.989784  0.882533  30.758904
+3      Random Forest  4823.857121  0.873367  40.314340
+4  Gradient Boosting  4368.847143  0.896130  31.262075
+5      Decision Tree  7066.079116  0.728284  51.132605
+6       XGBRegressor  4266.557768  0.900937  30.329778
+
+Strat_NoHyper_Outliers_All
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  4709.569490  0.855186  29.524888
+1              Lasso  4709.980001  0.855161  29.521261
+2              Ridge  4710.073946  0.855155  29.519081
+3      Random Forest  5060.696183  0.832788  33.011529
+4  Gradient Boosting  4708.620047  0.855245  30.966622
+5      Decision Tree  7294.931920  0.652552  44.502306
+6       XGBRegressor  4567.203048  0.863809  30.189475
+
+NoStrat_Hyper_Outliers_All
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  4709.569490  0.855186  29.524888
+1              Lasso  4709.980001  0.855161  29.521261
+2              Ridge  4710.073946  0.855155  29.519081
+3      Random Forest  5060.696183  0.832788  33.011529
+4  Gradient Boosting  4708.620047  0.855245  30.966622
+5      Decision Tree  7294.931920  0.652552  44.502306
+6       XGBRegressor  4567.203048  0.863809  30.189475
+
+Strat_Hyper_Outliers_All
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  4709.569490  0.855186  29.524888
+1              Lasso  4709.980001  0.855161  29.521261
+2              Ridge  4710.073946  0.855155  29.519081
+3      Random Forest  5060.696183  0.832788  33.011529
+4  Gradient Boosting  4708.620047  0.855245  30.966622
+5      Decision Tree  7294.931920  0.652552  44.502306
+6       XGBRegressor  4567.203048  0.863809  30.189475
+
+Strat_Hyper_NoOutliers_All
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  4717.825885  0.854678  28.288134
+1              Lasso  4716.456178  0.854762  28.342862
+2              Ridge  4716.534987  0.854757  28.478079
+3      Random Forest  4950.392171  0.839997  33.136041
+4  Gradient Boosting  4560.643945  0.864200  31.243855
+5      Decision Tree  6265.752768  0.743673  33.687270
+6       XGBRegressor  4545.031316  0.865128  30.128095
+
+Strat_Hyper_Outliers_NoSmokers
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  5184.841166  0.271373  28.860627
+1              Lasso  5182.983050  0.271896  28.863577
+2              Ridge  5183.010055  0.271888  28.852895
+3      Random Forest  5438.116509  0.198449  29.543050
+4  Gradient Boosting  5066.178419  0.304343  34.853944
+5      Decision Tree  6452.982882 -0.128639  30.153837
+6       XGBRegressor  5199.263343  0.267314  27.100597
+
+Strat_Hyper_Outliers_Smokers
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  5136.653971  0.810582  16.817586
+1              Lasso  5129.011358  0.811145  16.780286
+2              Ridge  5068.858738  0.815549  16.500817
+3      Random Forest  4068.068091  0.881194   8.712729
+4  Gradient Boosting  4461.220831  0.857121  10.868513
+5      Decision Tree  7096.850249  0.638431  15.634166
+6       XGBRegressor  3940.631499  0.888521   9.085728
+
+Strat_Hyper_Outliers_NoSmokers_OnlyBMI
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  6080.066491 -0.001961  81.620064
+1              Lasso  6080.066286 -0.001961  81.620100
+2              Ridge  6080.050133 -0.001955  81.622972
+3      Random Forest  6503.975332 -0.146547  81.051458
+4  Gradient Boosting  6084.905656 -0.003556  81.122728
+5      Decision Tree  7045.723635 -0.345505  89.794761
+6       XGBRegressor  6234.463996 -0.053495  73.711867
+
+Strat_Hyper_Outliers_Smokers_OnlyBMI
+*********************************************
+               model         RMSE        R2       MAPE
+0  Linear Regression  5263.951183  0.801077  16.271707
+1              Lasso  5263.949211  0.801078  16.271690
+2              Ridge  5261.387138  0.801271  16.250799
+3      Random Forest  6887.119755  0.659485  21.718815
+4  Gradient Boosting  6625.473456  0.684867  21.055797
+5      Decision Tree  8440.357434  0.488575  25.962623
+6       XGBRegressor  6131.044822  0.730146  18.731028
+
